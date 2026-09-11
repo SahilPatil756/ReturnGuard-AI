@@ -1,0 +1,14 @@
+{
+  "dataset_version": "synthetic-return-risk-v1",
+  "synthetic": true,
+  "disclaimer": "This is synthetic data generated for demo/evaluation. It is not real merchant data.",
+  "n_rows": 12000,
+  "target": "problematic_return",
+  "target_definition": "1 if the order was returned within 30 days AND the return was loss-driving (serial/high-cost/abuse-like pattern), else 0. Ordinary returns are labeled 0.",
+  "observation_window_days": 30,
+  "timezone": "Asia/Kolkata",
+  "date_min": "2024-06-01 00:12:00",
+  "date_max": "2025-07-05 23:27:00",
+  "positive_rate": 0.12083333333333333,
+  "ordinary_return_rate": 0.27
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ReturnGuard AI — Merchant Return Risk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,650&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/app.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="rail" aria-label="Primary">
+      <div class="brand">
+        <span class="mark" aria-hidden="true">RG</span>
+        <div>
+          <strong>ReturnGuard AI</strong>
+          <small>Defense-only risk desk</small>
+        </div>
+      </div>
+      <nav>
+        <a href="#/dashboard" data-route="dashboard">Overview</a>
+        <a href="#/queue" data-route="queue">Review queue</a>
+        <a href="#/score" data-route="score">Score an order</a>
+        <a href="#/lab" data-route="lab">Threshold lab</a>
+        <a href="#/health" data-route="health">Model health</a>
+        <a href="#/quality" data-route="quality">Data quality</a>
+        <a href="#/audit" data-route="audit">Audit trail</a>
+        <a href="#/safety" data-route="safety">Safety &amp; model card</a>
+      </nav>
+      <p class="rail-note">Advisory scores only. Operators decide. Punitive auto-actions are off.</p>
+    </aside>
+    <main>
+      <header class="top">
+        <div>
+          <h1 id="page-title">Overview</h1>
+          <p class="lede" id="page-lede">Locked temporal test set. Precision, recall, and false-positive cost — not accuracy theater.</p>
+        </div>
+        <div class="meta" id="model-meta">Model loading…</div>
+      </header>
+      <section id="view" class="view" aria-live="polite"></section>
+    </main>
+  </div>
+  <div id="drawer" class="drawer hidden" role="dialog" aria-modal="true" aria-labelledby="drawer-title"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
